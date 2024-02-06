@@ -1,49 +1,183 @@
 .main__container {
-    background-color: gray;
     width: auto;
     height: 90vh;
     display: flex;
-    gap: 24px;
     justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    background-color: var(--primary-color);
+}
+
+.main__container__logo {
+    width: 100px;
+    height: 45px;
 }
 
 .text__container {
-    background-color: white;
-    border: 1px black solid;
-    width: 60%;
+    background-color: var(--primary-color);
+    width: 50%;
+    padding: 48px 24px 24px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .text__input {
     height: 75%;
-    width: 75%;;
+    width: 100%;
+    border: none;
+    font-size: 32px;
+    font-family: var(--main-font);
 }
 
-.text__container__disclaimer{
+::placeholder {
+    color: var(--secondary-color);
+    opacity: 1;
+}
+
+textarea {
+    resize: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+textarea:focus,
+input:focus {
+    resize: none;
+    outline: 0;
+}
+
+.text__container__disclaimer {
     margin-right: auto;
-}
-
-.text__container__button{
+    margin-top: 12px;
+    margin-bottom: 12px;
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-.text__container__button button{
-    height: 50px;
-    width: 200px;
-    border-radius: 20px;
+.text__container__button {
+    width: 100%;
 }
 
+.text__container__button button {
+    padding: 24px 100px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.text__container__button .button_encrypt {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin: 0 24px 0 0;
+}
+
+.text__container__button .button_encrypt:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    transition: 0.25s;
+}
+
+.text__container__button .button_decrypt {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.text__container__button .button_decrypt:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: 0.25s;
+}
 
 .decoder__container {
-    background-color: white;
-    border: 1px black solid;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
     width: 25%;
+    padding: 24px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-footer {
+.decoder__container h1 {
+    font-size: 24px;
+    font-weight: 700;
     text-align: center;
+    margin-top: 12px;
+}
+
+.decoder__container h2 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.decoder__return {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 25%;
+    padding: 24px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    }
+
+.decoder__return p {
+    max-width: 100%;
+    height: 85%;
+    max-height: 90%;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.decoder__return button {
+    padding: 24px 100px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.decoder__return .button__copy {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+ .decoder__return .button__copy:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: 0.25s;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    background: linear-gradient(270deg, var(--secondary-color) 40%, var(--tertiary-color));
 }

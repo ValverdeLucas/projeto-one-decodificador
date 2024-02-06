@@ -7,15 +7,20 @@
     <title>Challenge One - Decodificador</title>
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/vars.css" />
     <script type="text/javascript" src="./script.js" defer></script>
 </head>
 
 <body>
 
     <div class="main__container">
+        <img class="main__container__logo" src="./src/assets/icons/Frame 6.png">
+
         <div class="text__container">
-            <textarea class="text__input" placeholder="digite seu texto"></textarea>
-            <div class="text__container__disclaimer"><span>!</span>Apenas letras minúsculas e sem acento.</div>
+            <textarea class="text__input" placeholder="Digite seu texto"></textarea>
+            <div class="text__container__disclaimer"><span><img
+                        src="./src/assets/icons/bi_exclamation-circle-fill.png"></span>Apenas letras minúsculas e sem
+                acento.</div>
             <div class="text__container__button">
                 <button class="button_encrypt">Criptografar</button>
                 <button class="button_decrypt">Descriptografar</button>
@@ -23,16 +28,21 @@
         </div>
 
         <div class="decoder__container">
+            <img src="./src/assets/icons/High quality products 1 1.svg">
             <h1>Nenhuma mensagem encontrada</h1>
-            <h2>Digite um texto que você deseja criptografar ou Descriptografar</h2>
+            <h2>Digite um texto que você deseja criptografar ou descriptografar</h2>
+        </div>
+
+        <div class="decoder__return hidden" id="decoder__return">
+            <p></p>
+            <button class="button__copy">Copiar</button>
         </div>
     </div>
 
 </body>
 
-<footer>
+<footer class="footer">
     <h1>Desenvolvido por Lucas Valverde © 2024</h1>
-
 </footer>
 
 </html>
