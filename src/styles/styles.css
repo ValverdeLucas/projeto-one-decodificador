@@ -1,0 +1,49 @@
+.main__container {
+    background-color: gray;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.text__container {
+    background-color: white;
+    border: 1px black solid;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text__input {
+    height: 75%;
+    width: 75%;;
+}
+
+.text__container__disclaimer{
+    margin-right: auto;
+}
+
+.text__container__button{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.text__container__button button{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+.decoder__container {
+    background-color: white;
+    border: 1px black solid;
+    width: 25%;
+}
+
+footer {
+    text-align: center;
+}
