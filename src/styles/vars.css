@@ -2,12 +2,29 @@
 
 :root {
 
-/* Font */
---main-font: "Inter", sans-serif;
+    /* Font */
+    --main-font: "Inter", sans-serif;
 
-/* Colors */
+    /* Colors */
 
---primary-color: #f2f2f2;
---secondary-color: #0A3871;
---tertiary-color: #000000;
+    --primary-color: #f2f2f2;
+    --secondary-color: #0A3871;
+    --tertiary-color: #b892ff;
+}
+
+body.dark-mode {
+    --primary-color: #0A3871;
+    --secondary-color: #f2f2f2;
+    --tertiary-color: #b892ff;
+}
+
+*,
+*::before,
+*::after {
+    transition: background-color 0.5s ease;
+}
+
+/* Certifique-se de que a transição também aplique a outros elementos que você deseja animar */
+body {
+    transition: color 0.5s ease;
 }
