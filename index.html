@@ -14,28 +14,36 @@
 <body>
 
     <div class="main__container">
-        <img class="main__container__logo" src="./src/assets/icons/Frame 6.png">
+        <div class="main__container__toggles">
+            <img class="main__container__logo" src="./src/assets/icons/Frame 6.png">
+            <button id="toggle-dark-mode" class="toggle__dark__mode">Dark/Light</button>
+        </div>
 
         <div class="text__container">
-            <textarea class="text__input" placeholder="Digite seu texto"></textarea>
+            <textarea class="text__input" placeholder="Digite seu texto" id="text-input"
+                oninput="this.value=this.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')"></textarea>
             <div class="text__container__disclaimer"><span><img
-                        src="./src/assets/icons/bi_exclamation-circle-fill.png"></span>Apenas letras minúsculas e sem
+                        src="./src/assets/icons/bi_exclamation-circle-fill.png"></span>Apenas letras minúsculas e
+                sem
                 acento.</div>
             <div class="text__container__button">
-                <button class="button_encrypt">Criptografar</button>
-                <button class="button_decrypt">Descriptografar</button>
+                <button class="button_encrypt" id="button-encrypt">Criptografar</button>
+                <button class="button_decrypt" id="button-decrypt">Descriptografar</button>
             </div>
         </div>
 
-        <div class="decoder__container">
+        <div class="decoder__container" id="decoder-container">
             <img src="./src/assets/icons/High quality products 1 1.svg">
             <h1>Nenhuma mensagem encontrada</h1>
             <h2>Digite um texto que você deseja criptografar ou descriptografar</h2>
         </div>
 
-        <div class="decoder__return hidden" id="decoder__return">
-            <p></p>
-            <button class="button__copy">Copiar</button>
+        <div class="decoder__return hidden" id="decoder-return">
+            <p id="decrypt-return"></p>
+            <div class="decoder__return__button">
+                <button class="button__copy" id="button-copy">Copiar</button>
+                <button class="button__clear" id="button-clear">Limpar</button>
+            </div>
         </div>
     </div>
 
