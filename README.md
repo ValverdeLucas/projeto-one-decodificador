@@ -18,12 +18,13 @@ Trata-se de um codificador/decodificador de texto, que ao receber um input do us
 <h2 align="center" id=regras> REGRAS E FUNCIONALIDADES </h2>
 <p align="center">
 As regras de codificação são as seguintes:
-
-A = ai<br>
-E = enter<br>
-I = imes<br>
-O = ober<br>
-u = ufat<br>
+<ul align="center">
+<li>A = ai<br></li>
+<li>E = enter<br></li>
+<li>I = imes<br></li>
+<li>O = ober<br></li>
+<li>u = ufat<br></li>
+</ul>
 
 Além dos botões de criptografar e descriptografar, o mesmo possui botões para copiar o texto codificado/decodificado e limpar os dados escritos na tela.
 
