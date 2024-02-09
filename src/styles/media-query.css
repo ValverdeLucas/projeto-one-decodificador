@@ -51,8 +51,10 @@
         flex-direction: column;
         width: 100vw;
         min-height: 100vh;
-        padding: 24px;
         justify-content: space-between;
+        gap: 24px;
+        padding: 12px;
+
     }
 
     .main__container__toggles {
@@ -61,7 +63,7 @@
         width: auto;
         height: 10px;
         justify-content: space-between;
-    } 
+    }
 
     .text__container {
         padding: 0 24px;
@@ -106,17 +108,13 @@
     .main__container__toggles {
         height: 10px;
     }
-    
+
     .text__container__button {
         gap: 12px;
     }
-    .main__container{
-        gap: 24px;
-        padding: 12px;
-    }
 
     .text__container {
-        padding:0;
+        padding: 8px;
     }
 
     .decoder__return button {
