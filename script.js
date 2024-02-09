@@ -38,6 +38,7 @@ function copyToClipboard() {
 }
 
 function clearDecrypt() {
+    inputText.value = ""
     decoderReturn.classList.add('hidden');
     decoderContainer.classList.remove('hidden');
 }
