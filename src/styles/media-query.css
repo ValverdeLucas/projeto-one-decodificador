@@ -1,0 +1,126 @@
+@media screen and (max-device-width: 768px) {
+    .main__container {
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+        padding: 0px 24px 24px 24px;
+        justify-content: space-between;
+    }
+
+    .main__container__toggles {
+        position: unset;
+        width: 100px;
+        height: 100px;
+        justify-content: flex-end;
+    }
+
+    .text__container {
+        padding: 0 24px;
+        width: auto;
+        height: 50%;
+        overflow: hidden;
+    }
+
+    .text__container__button {
+        justify-content: center;
+    }
+
+    .decoder__container {
+        width: auto;
+        height: 10%;
+    }
+
+    .decoder__container h1 {
+        margin-top: 0;
+    }
+
+    .decoder__container img {
+        display: none;
+    }
+
+    .decoder__return {
+        max-height: 25%;
+        width: auto;
+    }
+
+
+}
+
+@media screen and (max-device-width: 430px) {
+    .main__container {
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+        padding: 24px;
+        justify-content: space-between;
+    }
+
+    .main__container__toggles {
+        position: unset;
+        flex-direction: row;
+        width: auto;
+        height: 10px;
+        justify-content: space-between;
+    } 
+
+    .text__container {
+        padding: 0 24px;
+        width: auto;
+        height: 50%;
+        overflow: hidden;
+    }
+
+    .text__container__button {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .text__container__button button {
+        width: 100%;
+        max-width: none;
+        padding: 12px 24px;
+        max-width: none;
+    }
+
+    .decoder__container {
+        width: auto;
+        height: 10%;
+    }
+
+    .decoder__container h1 {
+        margin-top: 0;
+    }
+
+    .decoder__container img {
+        display: none;
+    }
+
+    .decoder__return {
+        max-height: 25%;
+        width: auto;
+    }
+}
+
+@media screen and (max-device-width: 375px) {
+    .main__container__toggles {
+        height: 10px;
+    }
+    
+    .text__container__button {
+        gap: 12px;
+    }
+    .main__container{
+        gap: 24px;
+        padding: 12px;
+    }
+
+    .text__container {
+        padding:0;
+    }
+
+    .decoder__return button {
+        width: auto;
+        padding: 12px 24px;
+    }
+}

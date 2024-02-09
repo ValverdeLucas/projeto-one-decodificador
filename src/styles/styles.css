@@ -89,10 +89,12 @@ input:focus {
 
 .text__container__button {
     width: 100%;
+    display: flex;
 }
 
 .text__container__button button {
     padding: 24px 100px;
+    max-width: 50%;
     border-radius: 25px;
     font-size: 16px;
     font-weight: 400;
@@ -186,6 +188,7 @@ input:focus {
 }
 
 .decoder__return button {
+    max-width: 50%;
     padding: 24px 60px;
     border-radius: 25px;
     font-size: 16px;
@@ -229,5 +232,5 @@ input:focus {
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    background: linear-gradient(270deg, var(--secondary-color) 40%, var(--tertiary-color));
+    background: linear-gradient(270deg, var(--secondary-color), var(--tertiary-color));
 }
