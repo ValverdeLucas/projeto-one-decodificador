@@ -18,7 +18,7 @@ Trata-se de um codificador/decodificador de texto, que ao receber um input do us
 <h2 align="center" id=regras> REGRAS E FUNCIONALIDADES </h2>
 <p align="center">
 As regras de codificação são as seguintes:
-<ul align="center">
+<ul>
 <li>A = ai<br></li>
 <li>E = enter<br></li>
 <li>I = imes<br></li>
