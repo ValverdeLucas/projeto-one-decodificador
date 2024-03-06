@@ -52,7 +52,7 @@ O projeto é simples, e os pré-requisitos são:
 </p>
 
 <h2 align="center" id=autor> AUTOR </h2>
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="https://www.linkedin.com/in/valverde-lucas/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/143420345?v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Lucas Valverde</b></sub></a> <a href="https://www.linkedin.com/in/valverde-lucas/"></a>
